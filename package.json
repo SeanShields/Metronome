@@ -1,16 +1,19 @@
 {
   "name": "metronome",
   "version": "1.0.0",
-  "description": "",
+  "description": "A small Electron app that plays audio on repeat.",
   "main": "src/index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . metronome --platform win32 --arch x64 --out dist/ --overwrite",
+    "setup": "electron-installer-windows --src dist/metronome-win32-x64/ --dest dist/installers/"
   },
-  "author": "",
+  "author": "Sean Shields",
   "license": "ISC",
   "devDependencies": {
     "electron": "^8.0.1",
-    "electron-installer-windows": "^3.0.0"
+    "electron-installer-windows": "^3.0.0",
+    "electron-packager": "^14.2.1"
   },
   "dependencies": {
     "electron-json-storage": "^4.1.8"
