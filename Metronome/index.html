@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Metronome</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+      window.ipcRenderer = require('electron').ipcRenderer;
+    </script>
+  </head>
+  <body>
+    <audio id="sound" style="display: none;"></audio>
+    <div class="buttons">
+      <button id="start" type="button">Start</button>
+      <button id="stop" type="button">Stop</button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.buttons { display: flex; padding: 10px; height: 100%; }
+button { 
+  border: none;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+ }
+ button:disabled, button:disabled {
+  cursor: not-allowed;
+}
+ button[id='start'] {
+  background: #27ae60;
+  color: #fff;
+ }
+ button[id='start']:hover {
+  background: #2ecc71;
+}
+ button[id='stop'] {
+  background: #c0392b;
+	color: #fff;
+ }
+ button[id='stop']:hover {
+	background: #e74c3c;
+}
