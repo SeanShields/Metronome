@@ -11,13 +11,13 @@ function createWindow() {
     resizable: false,
     titleBarStyle: 'hidden',
     autoHideMenuBar: true,
-    icon: 'assets/images/clock-small.png',
+    icon: 'src/assets/images/clock-small.png',
     webPreferences: {
       nodeIntegration: true
     }
   });
 
-  win.loadFile('index.html');
+  win.loadFile('src/index.html');
 }
 
 app.whenReady().then(createWindow);
@@ -35,7 +35,7 @@ app.on('activate', () => {
 });
 
 app.on('ready', () => {
-  tray = new Tray('assets/images/clock-small.png');
+  tray = new Tray('src/assets/images/clock-small.png');
   const contextMenu = Menu.buildFromTemplate([
     {
       label: 'Start',
